@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
     filtered_names.uniq!
     
       filtered_names.each do |name|
-         org_birds[name]={:color=>{}, :gender=>{}, :lives=>{}}
+         org_birds[name]={:color=>{[]}, :gender=>{[]}, :lives=>{[]}
         end
         
         #------------------ COLORS--------------------
