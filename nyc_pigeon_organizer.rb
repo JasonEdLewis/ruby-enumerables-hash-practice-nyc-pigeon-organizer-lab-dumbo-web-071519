@@ -28,9 +28,8 @@ j= 0 #pigeon iterater
     i = 0 #empty_arr iterater
     while i < colors_arr.length
           if colors_arr[i][1].include?(pigeon_keys[j])
-              # p pigeon_keys[j]
-              # p colors_arr[i][0]
-                org_birds[pigeon_keys[j]][:color].push(colors_arr[i][0].to_s)
+              
+  org_birds[pigeon_keys[j]][:color].push(colors_arr[i][0].to_s)
           end
           i += 1
         end
