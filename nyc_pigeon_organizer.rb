@@ -23,12 +23,12 @@ for things in data[:color]
     colors_arr << things
     colors_arr
 end
-j= 0 #pigeon iterater
+j= 0 
   while j < pigeon_keys.length
-    i = 0 #empty_arr iterater
+    i = 0
     while i < colors_arr.length
           if colors_arr[i][1].include?(pigeon_keys[j])
-              # binding.pry
+              #
   org_birds[pigeon_keys[j]][:color].push(colors_arr[i][0].to_s)
           end
           i += 1
