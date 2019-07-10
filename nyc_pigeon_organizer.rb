@@ -59,7 +59,28 @@ j= 0 #pigeon iterater
         j += 1  
      
     end
-  org_birds
+    lives_arr = []
+for things in data[:lives]
+    lives_arr<< things
+    lives_arr
+end
+
+j= 0 #pigeon iterater
+  while j < pigeon_keys.length
+    i = 0 #empty_arr iterater
+    while i < lives_arr.length
+          if lives_arr[i][1].include?(pigeon_keys[j])
+              # p pigeon_keys[j]
+              # p colors_arr[i][0]
+                org_birds[pigeon_keys[j]][:lives].push(lives_arr[i][0].to_s)
+          end
+          i += 1
+        end
+        j += 1  
+     
+    end
+
+org_birds
   
   
 end
