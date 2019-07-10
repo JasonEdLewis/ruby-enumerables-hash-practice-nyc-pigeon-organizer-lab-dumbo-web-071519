@@ -40,6 +40,6 @@ def nyc_pigeon_organizer(data)
   
         #--------------------------------------
   org_birds
-  
+  binding.pry
   
 end
